@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prafulla – Resume &amp; Bio-data</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--text:#1d2433;--muted:#5d6678;--accent:#2f5bea;--accent-t:#fff;--line:#e2e6ef;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10131c;--card:#181d29;--text:#e8ebf3;--muted:#9aa3b8;--accent:#7b9bff;--accent-t:#10131c;--line:#2a3142;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#10131c;--card:#181d29;--text:#e8ebf3;--muted:#9aa3b8;--accent:#7b9bff;--accent-t:#10131c;--line:#2a3142;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+header{position:sticky;top:env(safe-area-inset-top,0px);background:var(--card);border-bottom:1px solid var(--line);z-index:5}
+nav{max-width:960px;margin:auto;display:flex;align-items:center;gap:6px;padding:10px 16px;flex-wrap:wrap}
+.brand{font-weight:700;margin-right:auto}
+nav a{color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:8px;font-size:.95rem}
+nav a:hover{color:var(--text)}
+nav a.active{background:var(--accent);color:var(--accent-t)}
+#theme{border:1px solid var(--line);background:none;color:var(--text);border-radius:8px;padding:5px 10px;cursor:pointer}
+main{max-width:960px;margin:auto;padding:28px 16px 48px}
+.page{display:none}
+h1{font-size:2rem;margin:0 0 4px}
+h2{font-size:1.3rem;margin:0 0 14px;border-left:4px solid var(--accent);padding-left:10px}
+h3{margin:0;font-size:1.05rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:20px}
+.muted{color:var(--muted)}
+.hero{display:flex;gap:24px;align-items:center;flex-wrap:wrap}
+.avatar{width:120px;height:120px;border-radius:50%;background:var(--accent);color:var(--accent-t);display:grid;place-items:center;font-size:2.6rem;font-weight:700}
+.btn{display:inline-block;background:var(--accent);color:var(--accent-t);border:0;padding:10px 18px;border-radius:10px;font:inherit;text-decoration:none;cursor:pointer;margin:12px 8px 0 0}
+.btn.alt{background:none;color:var(--accent);border:1px solid var(--accent)}
+table{width:100%;border-collapse:collapse}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
+th{width:38%;color:var(--muted);font-weight:600}
+.wrap{overflow-x:auto}
+.item{padding:0 0 16px 16px;border-left:2px solid var(--line);margin-left:4px;position:relative}
+.item::before{content:"";position:absolute;left:-6px;top:6px;width:10px;height:10px;border-radius:50%;background:var(--accent)}
+.item .when{font-size:.85rem;color:var(--muted)}
+.item ul{margin:6px 0 0;padding-left:18px}
+.bar{height:8px;background:var(--line);border-radius:6px;overflow:hidden;margin:4px 0 14px}
+.bar span{display:block;height:100%;width:0;background:var(--accent);transition:width 1s ease}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.tags span{display:inline-block;border:1px solid var(--line);border-radius:20px;padding:2px 12px;margin:0 6px 8px 0;font-size:.9rem}
+label{display:block;margin-top:12px;font-weight:600}
+input,textarea{width:100%;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--text);font:inherit}
+.err{color:#d33;font-size:.85rem;min-height:1.1em}
+#ok{display:none;color:#1a8f4c;font-weight:600;margin-top:12px}
+footer{text-align:center;color:var(--muted);font-size:.85rem;padding:20px}
+@media print{header,footer,.noprint{display:none!important}.page{display:none!important}#resume{display:block!important}.card{border:0}}
+</style>
+</head>
+<body>
+<header>
+  <nav>
+    <span class="brand">Prafulla</span>
+    <a href="#home" data-p="home">Home</a>
+    <a href="#biodata" data-p="biodata">Bio-data</a>
+    <a href="#resume" data-p="resume">Resume</a>
+    <a href="#contact" data-p="contact">Contact</a>
+    <button id="theme" aria-label="Toggle theme">◐</button>
+  </nav>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section class="page" id="home">
+    <div class="card hero">
+      <div class="avatar" aria-hidden="true">P</div>
+      <div>
+        <h1>Prafulla</h1>
+        <p class="muted" id="role">Computer Science &amp; Engineering Student</p>
+        <p>I’m a computer science student who enjoys solving problems with code and building useful projects. Explore my bio-data and resume, or get in touch.</p>
+        <a class="btn" href="#resume">View Resume</a><a class="btn alt" href="#contact">Contact Me</a>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card"><h3>Education</h3><p class="muted">B.E. in CSE – P.A. College of Engineering, Mangalore</p></div>
+      <div class="card"><h3>Focus</h3><p class="muted">Java, Python, C++ and data structures</p></div>
+      <div class="card"><h3>Location</h3><p class="muted">Manjeshwara, Kerala, India</p></div>
+    </div>
+  </section>
+
+  <!-- BIO-DATA -->
+  <section class="page" id="biodata">
+    <div class="card">
+      <h2>Bio-data</h2>
+      <div class="wrap"><table>
+        <tr><th>Full name</th><td>Prafulla</td></tr>
+        <tr><th>College</th><td>P.A. College of Engineering, Mangalore</td></tr>
+        <tr><th>Branch</th><td>Computer Science and Engineering</td></tr>
+        <tr><th>Date of birth</th><td>12 April 2006</td></tr>
+        <tr><th>Nationality</th><td>Indian</td></tr>
+        <tr><th>Marital status</th><td>Single</td></tr>
+        <tr><th>Languages known</th><td>English, Kannada</td></tr>
+        <tr><th>Address</th><td>Manjeshwara, Kasaragod, Kerala, India</td></tr>
+        <tr><th>Email</th><td><a href="mailto:prafullanaik853@gmail.com" style="color:var(--accent)">prafullanaik853@gmail.com</a></td></tr>
+        <tr><th>Phone</th><td>+91 63609 15764</td></tr>
+        <tr><th>Hobbies</th><td>Dancing, listening to music</td></tr>
+      </table></div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="page" id="resume">
+    <div class="card">
+      <h1>Prafulla</h1>
+      <p class="muted">prafullanaik853@gmail.com · +91 63609 15764 · Manjeshwara, Kasaragod, Kerala</p>
+      <button class="btn noprint" id="print">Print / Save as PDF</button>
+    </div>
+    <div class="card"><h2>Objective</h2>
+      <p>Motivated Computer Science and Engineering student seeking an opportunity to apply my skills in Java, Python, C++ and data structures to solve real-world problems and grow as a software developer.</p></div>
+    <div class="card"><h2>Education</h2>
+      <div class="item"><h3>B.E. in Computer Science and Engineering</h3><div class="when">2024 – 2028 · P.A. College of Engineering, Mangalore</div></div>
+      <div class="item"><h3>Higher Secondary (Science)</h3><div class="when">2022 – 2024 · Pre-University</div></div>
+    </div>
+    <div class="card"><h2>Projects</h2>
+      <div class="item"><h3>Bloom Lens Taxonomy</h3><div class="when">Academic Project</div>
+        <ul><li>Project built as part of my Computer Science and Engineering coursework.</li></ul></div>
+    </div>
+    <div class="grid">
+      <div class="card"><h2>Skills</h2>
+        <h3 style="margin-bottom:8px">Technical</h3><div class="tags"><span>Java</span><span>Python</span><span>C++</span><span>Data Structures &amp; Algorithms</span></div><h3 style="margin:8px 0">Soft skills</h3><div class="tags"><span>Communication</span><span>Leadership</span><span>Problem Solving</span></div>
+        
+        
+        
+      </div>
+      <div class="card"><h2>Certifications</h2>
+        <div class="tags"><span>NPTEL Online Certification</span><span>Cisco Networking Basics Certificate</span><span>Salesforce Essentials: CRM Foundations</span></div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="page" id="contact">
+    <div class="card">
+      <h2>Contact</h2>
+      <p class="muted">Send a message and I’ll get back to you.</p>
+      <div id="form" novalidate>
+        <label for="n">Name</label><input id="n" type="text"><div class="err" id="en"></div>
+        <label for="e">Email</label><input id="e" type="email"><div class="err" id="ee"></div>
+        <label for="m">Message</label><textarea id="m" rows="4"></textarea><div class="err" id="em"></div>
+        <button class="btn" id="send" type="button">Send message</button>
+        <div id="ok">Thank you! Your message has been noted.</div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>© 2026 Prafulla · Built with HTML, CSS &amp; jQuery</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(function(){
+  var pages=["home","biodata","resume","contact"];
+  function show(){
+    var h=location.hash.replace("#","");
+    if(pages.indexOf(h)<0)h="home";
+    $(".page").hide();
+    $("#"+h).fadeIn(250);
+    $("nav a").removeClass("active").filter('[data-p="'+h+'"]').addClass("active");
+    document.title=h.charAt(0).toUpperCase()+h.slice(1)+" – Prafulla";
+    $(".bar span").css("width",0);
+    if(h==="resume"){setTimeout(function(){$(".bar span").each(function(){$(this).css("width",$(this).data("w")+"%")})},100)}
+    window.scrollTo(0,0);
+  }
+  $(window).on("hashchange",show);show();
+
+  // typing effect for role
+  var roles=["Computer Science & Engineering Student","Java · Python · C++ Programmer","Problem Solver"],i=0;
+  setInterval(function(){i=(i+1)%roles.length;$("#role").fadeOut(200,function(){$(this).text(roles[i]).fadeIn(200)})},3500);
+
+  // theme toggle
+  try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}
+  $("#theme").on("click",function(){
+    var dark=getComputedStyle(document.documentElement).colorScheme==="dark";
+    var n=dark?"light":"dark";
+    document.documentElement.setAttribute("data-theme",n);
+    try{localStorage.setItem("theme",n)}catch(e){}
+  });
+
+  $("#print").on("click",function(){window.print()});
+
+  // form validation
+  $("#send").on("click",function(){
+    var ok=true,n=$.trim($("#n").val()),e=$.trim($("#e").val()),m=$.trim($("#m").val());
+    $(".err").text("");$("#ok").hide();
+    if(n.length<2){$("#en").text("Please enter your name.");ok=false}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e)){$("#ee").text("Enter a valid email.");ok=false}
+    if(m.length<10){$("#em").text("Message should be at least 10 characters.");ok=false}
+    if(ok){$("#ok").slideDown();$("#n,#e,#m").val("")}
+  });
+});
+</script>
+</body>
+</html>
